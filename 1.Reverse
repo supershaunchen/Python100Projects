@@ -1,0 +1,3 @@
+string = raw_input("input ur string")
+for i in reversed(string):
+    print i,
