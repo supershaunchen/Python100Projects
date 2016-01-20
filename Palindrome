@@ -1,0 +1,13 @@
+string = raw_input("Input:")
+
+print "\nYour input:"
+for i in string:
+	print i,
+
+print "\nReversed:"
+for j in reversed(string):
+	print j,
+if i == j:
+	print"\nPalinfrom"
+else:
+	print"\nNoPalindrome"
