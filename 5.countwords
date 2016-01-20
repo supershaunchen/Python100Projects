@@ -1,0 +1,11 @@
+file = open('\path\readme.txt', 'r+')
+try:
+	alldata = file.read()
+finally:
+	file.close()
+
+i = 0
+for word in alldata:
+	i += 1
+
+print i,
