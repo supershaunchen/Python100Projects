@@ -1,0 +1,21 @@
+def find_vowel(word):
+	for i in range(len(word)):
+		if word[i] in vowel:
+			return i
+	return -1
+
+vowel = ("A","a","E","e","I","i","O","o","U","u")
+piglatin =raw_input("please enter ur word:")
+
+words = piglatin.split()
+count = 0
+
+for word in words:
+	vowel = find_vowel(word)
+	if (vowel== -1):
+		print word,
+	elif(vowel==0):
+		print word + "ay"
+	else:
+		print word[vowel:]+vowel[:vowel]+"ay"
+
