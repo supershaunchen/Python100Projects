@@ -1,0 +1,6 @@
+vowel = "AEIOUaeiou"
+
+string = raw_input("please enter ur word:")
+
+for v in vowel:
+	print string.count(v),
