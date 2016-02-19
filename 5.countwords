@@ -1,3 +1,13 @@
+
+string = raw_input("Please Input: ")
+
+print len(string.split())
+
+
+----------------------------------------------------
+READ FILE
+
+
 file = open('\path\readme.txt', 'r+')
 try:
 	alldata = file.read()
