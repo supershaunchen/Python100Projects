@@ -1,6 +1,9 @@
-vowel = "AEIOUaeiou"
-
-string = raw_input("please enter ur word:")
-
-for v in vowel:
-	print string.count(v),
+def countvowels(string):
+	num = 0 
+	for char in string:
+		if char in "aeiouAEIOU":
+			num += 1
+	return num
+	
+s = raw_input("Please input: ")
+print countvowels(s)
